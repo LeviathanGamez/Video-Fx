@@ -5,7 +5,7 @@ let canvassize = 1000;
 let video;
 const density = "Ñ@#W9876543210?!abc;:+=-,._ "
 const modes = ["ascii","dvd","pixel","rainbow","infrared","video","flip","filters"]
-let mode = localStorage.getItem("mode") || modes[0]
+let mode = localStorage.getItem("mode") || modes[2]
 let x = 0
 let y = 0
 let z = 0;
@@ -45,7 +45,8 @@ function createModeButtons() {
 if (mode == "ascii"){
   function setup() {
     size = 100
-    createCanvas(canvassize,canvassize);
+    canvas = createCanvas(canvassize, canvassize);
+    canvas.parent('canvas-holder');
     createModeButtons();
     video = createCapture(VIDEO)
     video.size(size,size)
@@ -73,7 +74,8 @@ if (mode == "ascii"){
 }
 else if (mode == "dvd"){
   function setup() {
-    createCanvas(canvassize,canvassize);
+    canvas = createCanvas(canvassize, canvassize);
+    canvas.parent('canvas-holder');
     createModeButtons();
     video = createCapture(VIDEO)
     size = 100
@@ -146,7 +148,8 @@ else if (mode == "dvd"){
 }
 else if (mode == "pixel"){
   function setup() {
-    createCanvas(canvassize,canvassize);
+    canvas = createCanvas(canvassize, canvassize);
+    canvas.parent('canvas-holder');
     createModeButtons();
     size = 80
     video = createCapture(VIDEO)
@@ -193,7 +196,8 @@ else if (mode == "rainbow") {
     horizonal = (!horizonal);
   }
   function setup() {
-    createCanvas(canvassize,canvassize);
+    canvas = createCanvas(canvassize, canvassize);
+    canvas.parent('canvas-holder');
     createModeButtons();
     video = createCapture(VIDEO)
     size = 1000
@@ -250,7 +254,8 @@ else if (mode == "rainbow") {
 }
 else if (mode == "infrared"){
   function setup() {
-    createCanvas(canvassize,canvassize);
+    canvas = createCanvas(canvassize, canvassize);
+    canvas.parent('canvas-holder');
     createModeButtons();
     video = createCapture(VIDEO)
     size = 1000
@@ -313,7 +318,8 @@ else if (mode == "video"){
     }
   }
   function setup() {
-    createCanvas(canvassize,canvassize);
+    canvas = createCanvas(canvassize, canvassize);
+    canvas.parent('canvas-holder');
     createModeButtons();
 
     videos.unshift(createCapture(VIDEO))
@@ -355,7 +361,8 @@ else if (mode == "video"){
 }
 else if (mode == "flip"){
   function setup() {
-    createCanvas(canvassize,canvassize);
+    canvas = createCanvas(canvassize, canvassize);
+    canvas.parent('canvas-holder');
     createModeButtons();
     size = 1000
     video = createCapture(VIDEO)
@@ -382,7 +389,8 @@ else if (mode == "flip"){
   }
 }else if (mode == "filters"){
   function setup() {
-    createCanvas(canvassize,canvassize);
+    canvas = createCanvas(canvassize, canvassize);
+    canvas.parent('canvas-holder');
     createModeButtons();
     size = 1000
     video = createCapture(VIDEO)
