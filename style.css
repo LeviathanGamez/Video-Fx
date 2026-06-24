@@ -3,6 +3,32 @@ html, body {
   padding: 0;
   background-color: #36393f;
 }
+#container {
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+}
+#sidebar {
+	font-family: 'Space Grotesk', sans-serif;
+	color: #dcddde;
+}
+#sidebar h1 {
+	font-size: 2.8rem;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+
+	color: #f2f3f5;
+
+	text-shadow:
+		0 0 10px rgba(255,255,255,0.08),
+		0 0 20px rgba(255,255,255,0.04);
+}
+#sidebar h2 {
+	color: #b9bbbe;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
 
 canvas {
   display: block;
