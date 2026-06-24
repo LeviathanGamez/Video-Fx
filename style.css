@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #36393f;
+}
+
+canvas {
+  display: block;
+}
+.mode-btn{
+  padding: 8px 14px;
+	border-radius: 8px;
+	border: none;
+	background: #222;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+.mode-btn2{
+  padding: 8px 14px;
+  margin: 2px;
+	border-radius: 8px;
+	border: none;
+	background: #bb0a0a;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
