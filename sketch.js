@@ -5,7 +5,7 @@ let canvassize = 1000;
 let video;
 const density = "Ñ@#W9876543210?!abc;:+=-,._ "
 const modes = ["ascii","dvd","pixel","rainbow","infrared","video","flip","filters"]
-let mode = localStorage.getItem("mode") || modes[2]
+let mode = localStorage.getItem("mode") || modes[0]
 let x = 0
 let y = 0
 let z = 0;
