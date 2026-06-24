@@ -5,7 +5,7 @@ https://leviathangamez.github.io/Video-Fx/
 
 ## Switch to 75% zoom on browser for best experience
 
-<img width="1920" height="1106" alt="1782334432701" src="https://github.com/user-attachments/assets/0f9a6fbc-4958-4390-a2b3-f676e18aaffa" />
+<img width="1470" height="846" alt="Screenshot 2026-06-24 at 5 18 25 PM" src="https://github.com/user-attachments/assets/898bda8e-0c78-477c-a0bb-13e67812c620" />
 
 ### The tool includes the following modes and effects:
 
